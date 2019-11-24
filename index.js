@@ -11,8 +11,8 @@ client.on('ready', () => {
     let statues = ["By Flxvio ©", "O4B™", "🛠️ En Construction.. 🛠️"];
     setInterval(function(){
     let status = statues[Math.floor(Math.random()*statues.length)];
-        bot.user.setActivity(status, {type: "LISTENING"});
-        bot.user.setStatus("dnd")
+        client.user.setActivity(status, {type: "LISTENING"});
+        client.user.setStatus("dnd")
     }, 5000)
 })
 

@@ -160,4 +160,4 @@ module.exports.help = {
 
 
 
-client.login('NjQ3OTYwMzk3OTIzNzQ1Nzk1.XdpZcg.L0c3_lXsZsci-GTbQsjqhy3J_ig');
+client.login(process.env.TOKEN);

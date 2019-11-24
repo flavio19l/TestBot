@@ -6,9 +6,14 @@ var prefix = config.prefix
 
 client.login(process.env.TOKEN) ;
 
-client.on('ready' , function(){
-      console.log("Je Suis Co") 
-      client.user.setActivity("Le Serveur De La O4B | /", {type : "WATCHING"} )
+bot.on('ready', () => {
+    console.log("Bot O4B ON !")
+    let statues = ["By Flxvio ©", "O4B™", "🛠️ En Construction.. 🛠️"];
+    setInterval(function(){
+    let status = statues[Math.floor(Math.random()*statues.length)];
+        bot.user.setActivity(status, {type: "LISTENING"});
+        bot.user.setStatus("dnd")
+    }, 5000)
 })
 
 client.on('message' , function(message){

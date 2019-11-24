@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 var prefix = config.prefix
 
-client.login(process.env.token) ;
+client.login(process.env.TOKEN) ;
 
 client.on('ready' , function(){
       console.log("Je Suis Co") 

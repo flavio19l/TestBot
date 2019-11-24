@@ -6,7 +6,7 @@ var prefix = config.prefix
 
 client.login(process.env.TOKEN) ;
 
-bot.on('ready', () => {
+client.on('ready', () => {
     console.log("Bot O4B ON !")
     let statues = ["By Flxvio ©", "O4B™", "🛠️ En Construction.. 🛠️"];
     setInterval(function(){

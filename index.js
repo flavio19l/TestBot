@@ -8,7 +8,7 @@ client.login(process.env.TOKEN) ;
 
 client.on('ready', () => {
     console.log("Bot TrainS ON !")
-    let statues = ["TrainS™", "🛠️ En Construction.. 🛠️", "Prefix : /", "21h30 = Je vais dormir 💤];
+    let statues = ["TrainS™", "🛠️ En Construction.. 🛠️", "Prefix : /", "21h30 = Je me ***STOP***💤];
     setInterval(function(){
     let status = statues[Math.floor(Math.random()*statues.length)];
         client.user.setActivity(status, {type: "LISTENING"});

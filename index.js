@@ -32,7 +32,7 @@ client.on('message' , function(message){
 } 
 });
 
-client.on.module.exports.run = (client, message, args) => {
+module.exports.run = (client, message, args) => {
 
     if (!message.guild.member(message.author).hasPermission('KICK_MEMBERS')) { return message.channel.send('Vous n\'avez pas la permission !'); }
 

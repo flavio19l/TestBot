@@ -7,8 +7,8 @@ var prefix = config.prefix
 client.login(process.env.TOKEN) ;
 
 client.on('ready', () => {
-    console.log("Bot O4B ON !")
-    let statues = ["By Flxvio ©", "O4B™", "🛠️ En Construction.. 🛠️"];
+    console.log("Bot TrainS ON !")
+    let statues = ["By Flxvio ©", "TrainS™", "🛠️ En Construction.. 🛠️"];
     setInterval(function(){
     let status = statues[Math.floor(Math.random()*statues.length)];
         client.user.setActivity(status, {type: "LISTENING"});

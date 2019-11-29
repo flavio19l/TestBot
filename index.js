@@ -31,7 +31,7 @@ client.on('message' , function(message){
  }) 
 } 
 });
-exports.run = (client, message, args, level) => {
+client.on(message, args, level) => {
 
   // If no specific command is called, show all filtered commands.
 
